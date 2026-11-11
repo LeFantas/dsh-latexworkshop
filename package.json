@@ -1,0 +1,25 @@
+{
+  "name": "dsh-dmzlatexworkshop",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "DSH 本地 LaTeX 编译与 SyncTeX 定位（手动触发，不经过 AI）",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeFantas/dsh-latexworkshop.git"
+  }
+}
